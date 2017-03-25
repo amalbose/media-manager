@@ -58,6 +58,10 @@ require(['ojs/ojcore', 'knockout', 'appController', 'ojs/ojknockout',
     $(function() {
 
       function init() {
+        if (window.nodeRequire !== undefined) {
+          var viewPath = 'text!' + __dirname + '/js/views/';
+          oj.ModuleBinding.defaults.viewPath = viewPath;
+        }
         oj.Router.sync().then(
           function () {
             // Bind your ViewModel for the content of the whole page body.
