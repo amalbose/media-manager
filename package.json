@@ -8,7 +8,8 @@
   },
   "main": "./web/main.js",
   "scripts": {
-    "start": "grunt build && electron ./web/main.js"
+    "serve": "grunt serve",
+    "start": "electron ./web/main.js"
   },
   "dependencies": {
     "oraclejet": "~3.0.0"

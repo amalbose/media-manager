@@ -29,7 +29,7 @@ module.exports = function () {
     watch: {
       sourceFiles:
       {
-        files: ['src/js/*.js', 'src/css/*.css'],
+        files: ['src/js/viewModels/*.js','src/js/*.js', 'src/js/views/*.html', 'src/css/*.css'],
         options: {
           livereload: true
         }
